@@ -138,3 +138,9 @@ ps -ef|grep redis
 注释bind 127.0.0.1
 设置protected-mode no
 参考网页https://www.cnblogs.com/liusxg/p/5712493.html
+
+
+安装本地jar包至本地仓库中：
+mvn install:install-file -Dfile=D:\***.jar -DgroupId=*** -DartifactId=*** -Dversion=*** -Dpackaging=jar
+
+
