@@ -131,6 +131,8 @@ $ tar xzf redis-4.0.8.tar.gz
 $ cd redis-4.0.8
 $ make
 切换到src目录下使用make install
+启动redis服务
+redis-server /usr/local/redis/etc/redis.conf
 参考页面http://www.jb51.net/article/79096.htm
 netstat -tunpl|grep 6379
 ps -ef|grep redis
