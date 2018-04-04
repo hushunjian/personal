@@ -30,13 +30,13 @@ yum install mysql-devel
 
 
 设置密码
-set password for 'root'@'localhost' =password('password');
+set password for 'root'@'localhost' =password('password');	
 
 设置所有ip都可以访问数据库
 grant all privileges on *.* to root@'%'identified by 'mysql'
 参考网址:http://www.cnblogs.com/starof/p/4680083.html
-
-
+解决错误问题:https://blog.csdn.net/tys1986blueboy/article/details/7056835/
+卸载mysql:http://www.jb51.net/article/97516.htm
 
 Linux环境下查看网络端口信息:
 netstat -ntpl
