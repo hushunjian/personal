@@ -45,6 +45,8 @@ netstat -ntpl
 查看防火墙状态:
 iptables -vnL
 
+关闭防火墙指令:https://blog.csdn.net/irhythm/article/details/51242388
+
 
 清除防火墙中链的规则
 iptables -F
