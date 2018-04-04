@@ -146,3 +146,33 @@ ps -ef|grep redis
 mvn install:install-file -Dfile=D:\***.jar -DgroupId=*** -DartifactId=*** -Dversion=*** -Dpackaging=jar
 
 
+
+@PathVariable和@RequestParam的区别:
+	@RequestParam用来获得静态的URL请求参数
+	@PathVariable用来获得动态的URL请求入参
+
+
+
+swagger的使用
+@ApiModelProperty(value="",required=true) 注解使用
+
+
+mybatis中使用PageInterceptor插件进行分页
+<plugins>
+	<plugin interceptor="com.github.pagehelper.PageInterceptor">
+		<property name="offsetAsPageNum" value="false" />
+		<property name="rowBoundsWithCount" value="true" />
+		<property name="pageSizeZero" value="true" />
+		<property name="reasonable" value="false" />
+		<property name="supportMethodsArguments" value="false" />
+		<property name="returnPageInfo" value="none" />
+	</plugin>
+</plugins>
+
+创建rowBounds对象
+PageRowBounds pb = new PageRowBounds((pageNumber-1)*pageSize,pageSize);
+
+mybatis中打印sql语句
+<setting name="logImpl" value="STDOUT_LOGGING" />
+
+
